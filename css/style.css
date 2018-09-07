@@ -14,13 +14,13 @@ h2 {
 }
 
 nav, .special {
-  color: #111111;
+  color: red;
   border: solid blue;
   padding: 5px 5px;
 }
 
 .special {
-  background-color: blue;
+  border: blue;
 }
 
 ul {
@@ -28,7 +28,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: ligthen(#333333, 10%);
+  background-color: black;
 }
 
 li {
@@ -46,7 +46,7 @@ li a {
 }
 
 li a:hover {
-  background-color: black;
+  background-color: #ff0a0a;
 }
 
 main {
@@ -70,6 +70,9 @@ footer {
 }
 
 footer p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20;
+  font-style: oblique;
   text-align: center;
   /*I want this to stay here because If I choose to change
   the center of text align variable, these need to stay centered. */

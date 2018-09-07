@@ -2,12 +2,20 @@
 
 $text-align: center;
 $background-color: lightcyan;
-$navlist-hover-color: #111111;
+$navlist-hover-color: red;
 $background-color-ul: #333333;
 $padding-for-icon: 82px; /* This is here because I have multiple paddings on different
 things. One of the things I change the most is the images in this situation. Helpful
 little bugger.*/
 $special: blue;
+
+@mixin p-font{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20;
+    font-style: oblique;
+
+}
 
 h1{
     text-align: $text-align;
@@ -21,8 +29,7 @@ h1{
 h2{
     text-align: $text-align;
  }
-
-nav {
+ nav {
     color: $navlist-hover-color;
     border: solid blue;
     padding: 5px 5px;
@@ -30,15 +37,16 @@ nav {
 }
 .special{
     @extend nav;
-    background-color: $special;
+    border: $special;
 }
+
 
  ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: ligthen($background-color-ul, 10%);
+        background-color: darken($background-color-ul, 20%);
         
 
     }
@@ -57,7 +65,7 @@ nav {
     }
     
     li a:hover {
-        background-color: darken($navlist-hover-color, 10%);
+        background-color: lighten($navlist-hover-color, 2%);
         }
 
 main{
@@ -81,6 +89,7 @@ footer{
 }
 
 footer p {
+    @include p-font;
     text-align: center; /*I want this to stay here because If I choose to change
     the center of text align variable, these need to stay centered. */
 }
