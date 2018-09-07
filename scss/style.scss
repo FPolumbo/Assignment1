@@ -7,22 +7,40 @@ $background-color-ul: #333333;
 $padding-for-icon: 82px; /* This is here because I have multiple paddings on different
 things. One of the things I change the most is the images in this situation. Helpful
 little bugger.*/
+$special: blue;
 
 h1{
     text-align: $text-align;
+    font: {
+        family: serif;
+        size: 1.2em;
+        weight: bold;
+    }
 }
 
 h2{
-        text-align: $text-align;
+    text-align: $text-align;
  }
 
+nav {
+    color: $navlist-hover-color;
+    border: solid blue;
+    padding: 5px 5px;
+
+}
+.special{
+    @extend nav;
+    background-color: $special;
+}
 
  ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: $background-color-ul;
+        background-color: ligthen($background-color-ul, 10%);
+        
+
     }
     
     li {
@@ -39,7 +57,7 @@ h2{
     }
     
     li a:hover {
-        background-color: $navlist-hover-color;
+        background-color: darken($navlist-hover-color, 10%);
         }
 
 main{
