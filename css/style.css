@@ -1,56 +1,65 @@
-/* CSS DOCUMENT */
-
-h1{
-    text-align: center;
+/* SCSS DOCUMENT */
+/* This is here because I have multiple paddings on different
+things. One of the things I change the most is the images in this situation. Helpful
+little bugger.*/
+h1 {
+  text-align: center;
 }
 
-h2{
-    text-align: center;
+h2 {
+  text-align: center;
 }
 
- ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333333;
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
-    }
-    
-    li a:hover {
-        background-color: #111111;
-    }
-
-main{
-    clear: left;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
 }
 
-
-.container .icon{
-    float:left;
-}
-.icon{
-    padding: 82px;
+li {
+  float: left;
 }
 
-body{
-    background-color:  lightcyan
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  /*I want this to stay here because If I choose to change
+  the center of text align variable, these need to stay centered. */
+  padding: 16px;
+  text-decoration: none;
 }
-footer{
-    clear: left;
+
+li a:hover {
+  background-color: #111111;
+}
+
+main {
+  clear: left;
+}
+
+.container .icon {
+  float: left;
+}
+
+.icon {
+  padding: 82px;
+}
+
+body {
+  background-color: lightcyan;
+}
+
+footer {
+  clear: left;
 }
 
 footer p {
-    text-align: center;
+  text-align: center;
+  /*I want this to stay here because If I choose to change
+  the center of text align variable, these need to stay centered. */
 }
+
+/*# sourceMappingURL=style.css.map */

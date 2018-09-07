@@ -1,0 +1,68 @@
+/* SCSS DOCUMENT */
+
+$text-align: center;
+$background-color: lightcyan;
+$navlist-hover-color: #111111;
+$background-color-ul: #333333;
+$padding-for-icon: 82px; /* This is here because I have multiple paddings on different
+things. One of the things I change the most is the images in this situation. Helpful
+little bugger.*/
+
+h1{
+    text-align: $text-align;
+}
+
+h2{
+        text-align: $text-align;
+ }
+
+
+ ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $background-color-ul;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center; /*I want this to stay here because If I choose to change
+        the center of text align variable, these need to stay centered. */
+        padding: 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: $navlist-hover-color;
+        }
+
+main{
+    clear: left;
+}
+
+
+.container .icon{
+    float:left;
+}
+.icon{
+    padding: 82px;
+}
+
+body{
+    background-color:  $background-color;
+}
+
+footer{
+    clear: left;
+}
+
+footer p {
+    text-align: center; /*I want this to stay here because If I choose to change
+    the center of text align variable, these need to stay centered. */
+}
